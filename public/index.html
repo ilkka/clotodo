@@ -9,8 +9,14 @@
 
   <label for="search">Search:</label> <input name="search" ng-model="query" />
 
+  <label for="sort">Sort by:</label>
+  <select name="sort" ng-model="sortProp">
+    <option value="label">Label</option>
+    <option value="createdAt">Age</option>
+  </select>
+  
   <ul class="todos">
-    <li class="todo" ng-repeat="todo in todos | filter:query ">
+    <li class="todo" ng-repeat="todo in todos | filter:query | orderBy:sortProp">
       {{todo.label}}
     </li>
   </ul>    

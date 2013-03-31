@@ -21,4 +21,13 @@ describe('clotodo', function () {
     input('query').enter('angul');
     expect(repeater('.todos li').count()).toBe(1);
   });
+
+  it('should order the todos by either name or age', function() {
+    input('query').enter('buy');
+    expect(repeater('.todos li').column('todo.label'))
+      .toEqual(['Buy eggs', 'Buy milk']);
+    select('sortProp').option('Age');
+    expect(repeater('.todos li').column('todo.label'))
+      .toEqual(['Buy milk', 'Buy eggs']);    
+  })
 });

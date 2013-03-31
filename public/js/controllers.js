@@ -4,18 +4,23 @@ define(['angular', 'app'], function(angular) {
     ['$scope', function($scope) {
       $scope.todos = [
         {
-          "label": "Buy milk"
+          "label": "Buy milk",
+          "createdAt": "2013-01-01T12:00:00Z"
         },
         {
-          "label": "Buy eggs"
+          "label": "Buy eggs",
+          "createdAt": "2013-01-02T12:00:00Z"
         },
         {
-          "label": "Learn Angular.js"
+          "label": "Learn Angular.js",
+          "createdAt": "2013-01-04T12:00:00Z"
         },
         {
-          "label": "Learn Clojure"
+          "label": "Learn Clojure",
+          "createdAt": "2013-01-03T12:00:00Z"
         },
       ];
+      $scope.sortProp = 'label';
     }
   ]);
 });
