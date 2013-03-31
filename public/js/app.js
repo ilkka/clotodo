@@ -1,8 +1,8 @@
 define([
   'angular',
-  'controllers'
   ], function(angular, controllers) {
     'use strict';
-    return angular.module('app', []);
+    var app = angular.module('app', []);
+    return app;
   }
 );
