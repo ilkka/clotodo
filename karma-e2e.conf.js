@@ -10,7 +10,8 @@ basePath = '';
 files = [
   ANGULAR_SCENARIO,
   ANGULAR_SCENARIO_ADAPTER,
-  'spec/e2e/**/*.js'
+  'spec/e2e/**/*.js',
+  {pattern: 'public/**/*', included: false}
 ];
 
 
