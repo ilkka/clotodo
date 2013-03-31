@@ -1,20 +1,20 @@
 define(['angular', 'app'], function(angular) {
   'use strict';
-  angular.module('app').controller('PhoneListController',
+  angular.module('app').controller('TodoListController',
     ['$scope', function($scope) {
-      $scope.phones = [
+      $scope.todos = [
         {
-          "name"    : "Nexus S",
-          "snippet" : "Blah blah de blah"
+          "label": "Buy milk"
         },
         {
-          "name"    : "Plexus S",
-          "snippet" : "Blah blah de blah"
+          "label": "Buy eggs"
         },
         {
-          "name"    : "Sexus S",
-          "snippet" : "Blah blah de blah"
-        }
+          "label": "Learn Angular.js"
+        },
+        {
+          "label": "Learn Clojure"
+        },
       ];
     }
   ]);

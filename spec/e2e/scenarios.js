@@ -6,7 +6,7 @@ describe('clotodo', function () {
     sleep(1);
   });
 
-  it('should show a count of 3', function() {
-    expect(element('span.count').text()).toBe("3");
+  it('should show a count of 4', function() {
+    expect(element('.todo-count').text()).toBe("4");
   });
 });

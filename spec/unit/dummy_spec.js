@@ -15,7 +15,7 @@ define([
     }));
 
     describe('Controllers', function() {
-      describe('PhoneListController', function() {
+      describe('TodoListController', function() {
         it('creates a "phones" model with 3 phones', function() {
           expect(scope.phones.length).toBe(3);
         });
