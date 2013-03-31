@@ -10,7 +10,7 @@ require.config({
   },
 });
 
-require(['jquery', 'angular'],
+require(['jquery', 'angular', 'app'],
   function($, angular) {
     'use strict';
     $(document).ready(function() {
