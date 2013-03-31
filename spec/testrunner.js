@@ -13,6 +13,7 @@ require.config({
 require([
   'angular',
   'app',
+  '/base/spec/unittests.js',
   ], function(angular, app) {
     window.__karma__.start();
   });
