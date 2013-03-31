@@ -5,7 +5,7 @@
   <script data-main="js/main" src="js/require.js"></script>
 </head>
 <body ng-controller="TodoListController">
-  <h1><span class="todo-count">{{todos.length}}</span> thing(s) to do:</h1>
+  <h1><span class="todo-count" ng-bind-template="{{todos.length}}">0</span> thing(s) to do:</h1>
 
   <ul id="todolist">
     <li ng-repeat="todo in todos">
