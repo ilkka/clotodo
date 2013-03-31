@@ -7,8 +7,10 @@
 <body ng-controller="TodoListController">
   <h1><span class="todo-count" ng-bind-template="{{todos.length}}">0</span> thing(s) to do:</h1>
 
+  <label for="search">Search:</label> <input name="search" ng-model="query" />
+
   <ul class="todos">
-    <li class="todo" ng-repeat="todo in todos">
+    <li class="todo" ng-repeat="todo in todos | filter:query ">
       {{todo.label}}
     </li>
   </ul>    
