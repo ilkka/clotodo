@@ -12,7 +12,6 @@ files = [
   JASMINE_ADAPTER,
   REQUIRE,
   REQUIRE_ADAPTER,
-  'spec/**/*_spec.js',
   'spec/testrunner.js',
   {pattern: 'spec/**/*.js', included: false},
   {pattern: 'public/js/**/*.js', included: false}
