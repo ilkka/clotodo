@@ -2,7 +2,7 @@ describe('clotodo', function () {
   'use strict';
 
   beforeEach(function() {
-    browser().navigateTo("../../public/index.html");
+    browser().navigateTo("/base/public/index.html");
   });
 
   it('should go somewhere else', function() {
