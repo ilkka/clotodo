@@ -12,10 +12,11 @@ require.config({
 });
 
 require([
-  'angular',
-  'angularMocks',
-  'app',
+  // 'angular',
+  // 'angularMocks',
+  // 'app',
+  // 'controllers',
   '/base/spec/unittests.js',
-  ], function(angular, mocks, app) {
+  ], function() {
     window.__karma__.start();
   });
