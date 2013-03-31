@@ -4,6 +4,14 @@ define(function() {
       {
         "name"    : "Nexus S",
         "snippet" : "Blah blah de blah"
+      },
+      {
+        "name"    : "Plexus S",
+        "snippet" : "Blah blah de blah"
+      },
+      {
+        "name"    : "Sexus S",
+        "snippet" : "Blah blah de blah"
       }
     ];
   }
