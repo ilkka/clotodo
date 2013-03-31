@@ -13,7 +13,6 @@ require.config({
 require(['jquery', 'angular'],
   function($, angular) {
     'use strict';
-    angular.module('app');
     $(document).ready(function() {
       var $html = $('html');
       angular.bootstrap($html, ['app']);
