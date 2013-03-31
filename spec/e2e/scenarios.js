@@ -3,10 +3,10 @@ describe('clotodo', function () {
 
   beforeEach(function() {
     browser().navigateTo("/base/public/index.html");
+    sleep(1);
   });
 
   it('should go somewhere else', function() {
-    sleep(1);
     expect(browser().location().url()).toBe("");
   });
 });
