@@ -3,6 +3,7 @@ require.config({
   paths: {
     jquery: 'lib/jquery',
     angular: 'lib/angular',
+    angularMocks: '/base/spec/lib/angular-mocks'
   },
   shim: {
     'angular' : {'exports' : 'angular'},
@@ -12,8 +13,9 @@ require.config({
 
 require([
   'angular',
+  'angularMocks',
   'app',
   '/base/spec/unittests.js',
-  ], function(angular, app) {
+  ], function(angular, mocks, app) {
     window.__karma__.start();
   });
