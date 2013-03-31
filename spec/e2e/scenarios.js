@@ -6,7 +6,7 @@ describe('clotodo', function () {
     sleep(1);
   });
 
-  it('should go somewhere else', function() {
-    expect(browser().location().url()).toBe("");
+  it('should show a count of 3', function() {
+    expect(element('span.count').text()).toBe("3");
   });
 });
