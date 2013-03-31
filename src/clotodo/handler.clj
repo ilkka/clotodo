@@ -5,6 +5,7 @@
 
 (defroutes app-routes
   (GET "/hello" [] "Hello World")
+  (GET "/todo" [] "")
   (route/files "/")
   (route/not-found "Not Found"))
 
