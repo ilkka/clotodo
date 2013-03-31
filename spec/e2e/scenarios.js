@@ -6,6 +6,7 @@ describe('clotodo', function () {
   });
 
   it('should go somewhere else', function() {
-    expect(browser().location().url()).toBe("foobar");
+    sleep(1);
+    expect(browser().location().url()).toBe("");
   });
 });
