@@ -15,6 +15,7 @@ files = [
   'spec/testrunner.js',
   {pattern: 'spec/unittests.js', included: false},
   {pattern: 'spec/unit/*.js', included: false},
+  {pattern: 'spec/lib/**/*.js', included: false},
   {pattern: 'public/js/**/*.js', included: false}
 ];
 
