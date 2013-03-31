@@ -13,7 +13,8 @@ files = [
   REQUIRE,
   REQUIRE_ADAPTER,
   'spec/testrunner.js',
-  {pattern: 'spec/**/*.js', included: false},
+  {pattern: 'spec/unittests.js', included: false},
+  {pattern: 'spec/unit/*.js', included: false},
   {pattern: 'public/js/**/*.js', included: false}
 ];
 
