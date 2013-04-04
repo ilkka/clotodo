@@ -4,21 +4,19 @@ define([
   'controllers'
   ], function(angular, mocks) {
     'use strict';
-    var scope;
 
-    beforeEach(inject(function($rootScope, $controller) {
-      scope = $rootScope.$new();
-      angular.module('app')
-        .controller('AsdfController',
-                    ['$scope', function($scope) { $scope.phones = [1, 2, 3]; }]);
-      var ctrl = $controller('AsdfController', {$scope: scope});
-    }));
+    describe('TodoListController', function() {
+      
+      beforeEach(mocks.module('app'));
+      
+      beforeEach(mocks.inject(function($rootScope, $controller) {
+        this.scope = $rootScope.$new();
+        $controller('TodoListController', { $scope: this.scope });
+      }));
 
-    describe('Controllers', function() {
-      describe('TodoListController', function() {
-        it('creates a "phones" model with 3 phones', function() {
-          expect(scope.phones.length).toBe(3);
-        });
+      it('creates a "todos" model with 4 todos', function() {
+        expect(this.scope.todos.length).toBe(4);
       });
+
     });
   });
